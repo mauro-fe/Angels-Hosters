@@ -87,6 +87,11 @@ h4 {
 .heroBanner_iconPlay {
   width: 5em;
   display: none;
+  transition: transform 2s ease;
+}
+
+.heroBanner_iconPlay:hover {
+  transform: rotatey(360deg) scale(80%);
 }
 
 .heroBanner_title {
@@ -109,6 +114,11 @@ h4 {
   color: #fff;
   border-radius: 8px;
   margin: 1em;
+  transition: background-color .2s ease-in-out;
+}
+
+.heroBanner_btn:hover {
+  background-color: hsl(180, 68%, 35%);
 }
 
 /* md */
@@ -266,15 +276,26 @@ min-width: 74em     ->  col-xl
   }
 
   .mainContent_img {
-    flex: 0 0 25%;
+    flex: 0 0 36%;
+    overflow: hidden;
   }
 
-  .mainContent_text {
-    flex-grow: 1;
+  .mainContent_img img {
+    opacity: 60%;
+    transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+  }
+
+  .mainContent_img img:hover {
+    transform: scale(110%);
+    opacity: 100%;
   }
 
   .mainContent_title {
     margin-top: 0;
+  }
+
+  .mainContent_text {
+    flex-grow: 1;
   }
 }
 
