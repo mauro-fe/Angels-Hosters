@@ -146,9 +146,26 @@
   </main>
 
   <footer class="footer">
-    <h4>Copyright The Range</h4>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt deserunt commodi cupiditate iste nihil ipsam
-      tempora ex hic, rem beatae, blanditiis dolorum optio perspiciatis modi eum culpa quidem quaerat quibusdam.</p>
+    <article class="footer_contato  maxWidth">
+      <form action="#" class="footer_contato-form">
+        <div class="footer_contato-form_items">
+          <label for="name">Seu nome:</label>
+          <input type="text" name="name" id="name" placeholder="nome" required autocomplete="none">
+        </div>
+        <div class="footer_contato-form_items">
+          <label for="email">Seu email:</label>
+          <input type="email" name="email" id="email" placeholder="email" required autocomplete="none">
+        </div>
+        <div class="footer_contato-form_items">
+          <label for="pass">Sua senha:</label>
+          <input type="password" name="pass" id="pass" placeholder="senha" required>
+        </div>
+        <div class="footer_contato-button btn">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </div>
+      </form>
+    </article>
   </footer>
 </body>
 
